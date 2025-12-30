@@ -598,7 +598,7 @@ function initializeTetris() {
         gameRunning: false,
         dropTime: 0,
         lastTime: 0,
-        dropInterval: 250,
+        dropInterval: 100,
         blockSize: blockSize,
         boardWidth: 10,
         boardHeight: boardHeight
