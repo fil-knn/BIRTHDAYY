@@ -598,7 +598,7 @@ function initializeTetris() {
         gameRunning: false,
         dropTime: 0,
         lastTime: 0,
-        dropInterval: 100,
+        dropInterval: 200,
         blockSize: blockSize,
         boardWidth: 10,
         boardHeight: boardHeight
@@ -888,7 +888,7 @@ function clearLines() {
         
         // Level progression
         gameLevel = Math.floor(gameLines / 10) + 1;
-        tetrisGame.dropInterval = Math.max(50, 300 - (gameLevel - 1) * 50);
+        tetrisGame.dropInterval = Math.max(50, 300 - (gameLevel - 1) * 30);
         
         updateTetrisStats();
     }
